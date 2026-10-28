@@ -1,0 +1,18 @@
+#include <iostream> 
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter any character: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z')
+        cout << "Character is a capital letter";
+    else if (ch >= 'a' && ch <= 'z')
+        cout << "Character is a small letter";
+    else if (ch >= '0' && ch <= '9')
+        cout << "Character is a digit";
+    else
+        cout << "Character is a special symbol";
+
+    return 0;
+}
